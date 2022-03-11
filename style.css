@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  
+  :root {
+    --floor-hieght: 80px;
+  }
+  
+  .town {
+    display: grid;
+    grid-template-columns: 300px auto;
+    justify-content: start;
+    row-gap: 10px;
+    column-gap: 5px;
+  }
+  .floors {
+    border-left: 2px solid grey;
+    background: #f5f5f5;
+  }
+  
+  .floor {
+    padding: 12px;
+    color: #212121;
+    height: var(--floor-hieght);
+    border-bottom: 2px solid grey;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 6px;
+    align-items: center;
+  }
+  
+  .floor p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .floor label {
+    cursor: pointer;
+  }
+  
+  .hall {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 5px;
+  }
+  
+  .elevator {
+    width: 40px;
+    height: var(--floor-hieght);
+    background:lightblue;
+  }
+  
+  .elevator__number {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid grey;
+    background: #212121;
+    color: aquamarine;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
